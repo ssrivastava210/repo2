@@ -4,5 +4,9 @@ pipeline
     {
         git "https://github.com/ssrivastava210/Repo2" 
     }
+  stage('build')
+    {
+        git "./gradlew clean build"
+    }
 
 }
